@@ -3,12 +3,11 @@
 
 In this project we will be doing a Reimplementation of the paper "Effect of Data Scaling Methods on Machine Learning Algorithms and Model Performance" which aimed to evaluate eleven Machine Learning algorithms:
 
-1.  Logistic Regression (LS)
-2. 
-Linear Discriminant Analysis (LDA)
-3. K-Nearest Neighbors (KNN)
-4.  Naïve Bayes (NB)
-5.  Support Vector Machine (SVM)
+1.  Logistic Regression (LS) 
+1.  Linear Discriminant Analysis (LDA)
+1.  K-Nearest Neighbors (KNN)
+1.  Naïve Bayes (NB)
+1.  Support Vector Machine (SVM)
 1.  XGBoost Algorithm (XGB)
 1.  Decision Tree Classifier (DT)
 1.  Random Forest Classifier (RF)
