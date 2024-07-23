@@ -1,4 +1,4 @@
-# Data-Scaling-Methods-and-Model-Performance
+![image](https://github.com/user-attachments/assets/e7cb29fe-de68-4bb5-8ed4-5587058e99e7)# Data-Scaling-Methods-and-Model-Performance
 
 
 In this project we will be doing a Reimplementation of the paper "Effect of Data Scaling Methods on Machine Learning Algorithms and Model Performance" which aimed to evaluate eleven Machine Learning algorithms:
@@ -66,7 +66,7 @@ Results:
 | SVM | 0.48 | 0.52 | 0.53 | 0.52 | 0.55 | 0.55 |
 | XGB | 0.59 | 0.58 | 0.58 | 0.58 | 0.59 | 0.58 |
 | DT  | 0.51 | 0.51 | 0.51 | 0.50 | 0.52 | 0.51 |
-| RF  | 0.55 | 0.55 | 0.56 | 0.56 | 0.55 | 0.55 |
+| RF  | 0.55 | 0.55 | 0.56 | 0.56 | 0.55 | 0.58 |
 | GB  | 0.58 | 0.57 | 0.58 | 0.57 | 0.58 | 0.58 |
 | AB  | 0.50 | 0.51 | 0.51 | 0.51 | 0.50 | 0.51 |
 | ET  | 0.54 | 0.54 | 0.55 | 0.56 | 0.56 | 0.54 |
@@ -75,19 +75,41 @@ Mine:
 WS:	XGB>GB>LDA>ET>RF/LR>NB>DT>AB>SVM>KNN
 SS:	XGB>GB>LR/LDA/RF>KNN>ET>NB>SVM>DT>AB
 MM:	KNN/XGB/GB>RF>LDA/LR/ET>SVM>NB>DT/AB
-MA: KNN>XGB>GB>LR>RF>ET>LDA>NB>SVM>AB>DT
+MA: KNN/XGB>GB/LR/RF/ET>LDA>NB/SVM>AB>DT
 RS:	XGB>GB>LR>LDA>ET>KNN>RF>SVM>NB>DT>AB
-QT:	KNN>XGB>RF>GB>LR>LDA>SVM>ET>NB>DT/AB
+QT:	KNN>XGB/RF/GB>LR>LDA/SVM>ET>NB>DT/AB
 
 Paper:
-WS: SVM>RFET>XGB/GB>AB>KR>LDA>NB>KNN
-SS: RF/ET>GB>XGB>SVM>AB>KNN>LR>LDA>NB
-MM: RF/ET>GB/XGB>AB>KNN>LR>SVM>LDA>NB
-MA: RF/ET>GB/XGB>AB>KNN>LR/SVM>LDA/NB
-RS: RF/ET>GB/XGB>AB>SVM>KNN/LR>LDA/NB
-QT: RF/ET>GB>XGB>AB>KNN>SVM/LDA>LR>NB
+WS: DT/SVM>RF/ET>XGB/GB>AB>KR>LDA>NB>KNN
+SS: DT>RF/ET>GB>XGB>SVM>AB>KNN>LR>LDA>NB
+MM: DT>RF/ET>GB/XGB>AB>KNN>LR>SVM>LDA>NB
+MA: DT/RF/ET>GB/XGB>AB>KNN>LR/SVM>LDA/NB
+RS: DT/RF/ET>GB/XGB>AB>SVM>KNN/LR>LDA/NB
+QT: DT/RF/ET>GB>XGB>AB>KNN>SVM/LDA>LR>NB
 
+**For the Accuracy metric used to evaluate the different ML algorithms used in this project were far different than the results of the paper. In our Project the most two "Accurate" algorithms for most of the scaling methods were the XGBoost, Gradient Boost and K-Nearest Neighbors. On the contrary the best algorithms with the "Accuracy" metric were Random Forest, Extra Tree Classifier and Gradient Boost.**
 
+For different machine learning algorithms, data scaling methods can be ranked as
+follows:
+
+Mine:
+LR	RS	QT	MA	SS	MM	WS
+LDA	WS	RS	SS	MM	MA	QT
+KNN	QT	MM	MA	RS	SS	WS
+NB	QT	WS	RS	SS	MM	MA
+XGB	WS	RS	SS	MM	MA	QT
+DT	RS	SS	QT	WS	MM	MA
+
+Paper:
+LR: MM/MA/QT>WS/SS/RS
+LDA: QT>MA>WS/SS/MM/RS
+KNN: MA>MM/QT>SS>RS>NR>WS
+DT: RS/QT>WS/NR/SC/MM/MA
+NB: QT>WS/NR/SS/MM/MA/RS
+SVM: WS>SS>RS/QT>MA>MM>NR
+XGB: NR>WS/SS/MM/MA/RS/QT
+RF: MA>WS/NR/SS/MM/RS/QT
+GB: NR>QT>WS/SS/MM/MA/RS
 
 
 ######  Precision
@@ -105,6 +127,10 @@ QT: RF/ET>GB>XGB>AB>KNN>SVM/LDA>LR>NB
 | GB  | 0,42 | 0,34 | 0,35 | 0,33 | 0,42 | 0,36 |
 | AB  | 0,32 | 0,31 | 0,31 | 0,31 | 0,32 | 0,31 |
 | ET  | 0,38 | 0,31 | 0,33 | 0,35 | 0,38 | 0,31 |
+
+
+
+
 
 
 ######  Recall
