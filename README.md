@@ -72,20 +72,20 @@ Results:
 | ET  | 0.54 | 0.54 | 0.55 | 0.56 | 0.56 | 0.54 |
 
 Mine:
-WS:	XGB>GB>LDA>ET>RF/LR>NB>DT>AB>SVM>KNN
-SS:	XGB>GB>LR/LDA/RF>KNN>ET>NB>SVM>DT>AB
-MM:	KNN/XGB/GB>RF>LDA/LR/ET>SVM>NB>DT/AB
-MA: KNN/XGB>GB/LR/RF/ET>LDA>NB/SVM>AB>DT
-RS:	XGB>GB>LR>LDA>ET>KNN>RF>SVM>NB>DT>AB
-QT:	KNN>XGB/RF/GB>LR>LDA/SVM>ET>NB>DT/AB
+- WS:	XGB>GB>LDA>ET>RF/LR>NB>DT>AB>SVM>KNN
+- SS:	XGB>GB>LR/LDA/RF>KNN>ET>NB>SVM>DT>AB
+- MM:	KNN/XGB/GB>RF>LDA/LR/ET>SVM>NB>DT/AB
+- MA: KNN/XGB>GB/LR/RF/ET>LDA>NB/SVM>AB>DT
+- RS:	XGB>GB>LR>LDA>ET>KNN>RF>SVM>NB>DT>AB
+- QT:	KNN>XGB/RF/GB>LR>LDA/SVM>ET>NB>DT/AB
 
 Paper:
-WS: DT/SVM>RF/ET>XGB/GB>AB>KR>LDA>NB>KNN
-SS: DT>RF/ET>GB>XGB>SVM>AB>KNN>LR>LDA>NB
-MM: DT>RF/ET>GB/XGB>AB>KNN>LR>SVM>LDA>NB
-MA: DT/RF/ET>GB/XGB>AB>KNN>LR/SVM>LDA/NB
-RS: DT/RF/ET>GB/XGB>AB>SVM>KNN/LR>LDA/NB
-QT: DT/RF/ET>GB>XGB>AB>KNN>SVM/LDA>LR>NB
+- WS: DT/SVM>RF/ET>XGB/GB>AB>KR>LDA>NB>KNN
+- SS: DT>RF/ET>GB>XGB>SVM>AB>KNN>LR>LDA>NB
+- MM: DT>RF/ET>GB/XGB>AB>KNN>LR>SVM>LDA>NB
+- MA: DT/RF/ET>GB/XGB>AB>KNN>LR/SVM>LDA/NB
+- RS: DT/RF/ET>GB/XGB>AB>SVM>KNN/LR>LDA/NB
+- QT: DT/RF/ET>GB>XGB>AB>KNN>SVM/LDA>LR>NB
 
 **For the Accuracy metric used to evaluate the different ML algorithms used in this project were far different than the results of the paper. In our Project the most two "Accurate" algorithms for most of the scaling methods were the XGBoost, Gradient Boost and K-Nearest Neighbors. On the contrary the best algorithms with the "Accuracy" metric were Random Forest, Extra Tree Classifier and Gradient Boost.**
 
@@ -93,23 +93,23 @@ For different machine learning algorithms, data scaling methods can be ranked as
 follows:
 
 Mine:
-LR	RS	QT	MA	SS	MM	WS
-LDA	WS	RS	SS	MM	MA	QT
-KNN	QT	MM	MA	RS	SS	WS
-NB	QT	WS	RS	SS	MM	MA
-XGB	WS	RS	SS	MM	MA	QT
-DT	RS	SS	QT	WS	MM	MA
+- LR:	RS/QT>MA>SS/MM>WS
+- LDA:	WS/RS>SS/MM/MA/QT
+- KNN:	QT>MM/MA>RS/SS>WS
+- NB:	QT	WS	RS	SS	MM	MA
+- XGB:	WS	RS	SS	MM	MA	QT
+- DT:	RS	SS	QT	WS	MM	MA
 
 Paper:
-LR: MM/MA/QT>WS/SS/RS
-LDA: QT>MA>WS/SS/MM/RS
-KNN: MA>MM/QT>SS>RS>NR>WS
-DT: RS/QT>WS/NR/SC/MM/MA
-NB: QT>WS/NR/SS/MM/MA/RS
-SVM: WS>SS>RS/QT>MA>MM>NR
-XGB: NR>WS/SS/MM/MA/RS/QT
-RF: MA>WS/NR/SS/MM/RS/QT
-GB: NR>QT>WS/SS/MM/MA/RS
+- LR: MM/MA/QT>WS/SS/RS
+- LDA: QT>MA>WS/SS/MM/RS
+- KNN: MA>MM/QT>SS>RS>NR>WS
+- DT: RS/QT>WS/NR/SC/MM/MA
+- NB: QT>WS/NR/SS/MM/MA/RS
+- SVM: WS>SS>RS/QT>MA>MM>NR
+- XGB: NR>WS/SS/MM/MA/RS/QT
+- RF: MA>WS/NR/SS/MM/RS/QT
+- GB: NR>QT>WS/SS/MM/MA/RS
 
 
 ######  Precision
